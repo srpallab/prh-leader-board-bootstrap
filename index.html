@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- BootStrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <title>Leader Board</title>
   </head>
@@ -35,30 +36,30 @@
       <!-- Top Section Starts Here -->
       <div class="container bg-white my-5 rounded">
 	<div class="row">
-	  <h1 class="text-primary fs-4 my-5 ms-5">Top Player</h1>
+	  <h1 class="text-primary fs-4 my-5 ms-lg-5">Top Player</h1>
 	</div>
 	<div class="row ms-5">
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-1.png" width="15%"/>
 	    <span class="fs-5 ps-3">John Smith</span>
 	  </div>
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-2.png" width="15%"/>
 	    <span class="fs-5 ps-3">Pro Rasel</span>
 	  </div>
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-3.png" width="15%"/>
 	    <span class="fs-5 ps-3">Abu Sufian</span>
 	  </div>
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-4.png" width="15%"/>
 	    <span class="fs-5 ps-3">Shajedul Karim</span>
 	  </div>
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-5.png" width="15%"/>
 	    <span class="fs-5 ps-3">Maruf Ahmed</span>
 	  </div>
-	  <div class="col-lg-4 ps-0 pb-4 d-flex align-items-center">
+	  <div class="col-lg-4 col-md-6 ps-0 pb-4 d-flex align-items-center">
 	    <img alt="" src="images/players/player-6.png" width="15%"/>
 	    <span class="fs-5 ps-3">Mujahid</span>
 	  </div>
@@ -67,9 +68,9 @@
 	<hr class="mb-0" />
 	<!-- Blog Section Starts Here -->
 	<div class="row">
-	  <h1 class="text-primary fs-4 my-5 ms-5">Top Blog</h1>
+	  <h1 class="text-primary fs-4 my-5 ms-lg-5">Top Blog</h1>
 	</div>
-	<div class="row ms-5">
+	<div class="row ms-5 gy-4 pb-5">
 	  <div class="col-lg-6 ps-0">
 	    <div class="row">
 	      <div class="col-4">
@@ -118,65 +119,83 @@
       </div>
       <!-- Top Section Ends Here -->
       <!-- Bottom Section Starts Here -->
-      <div class="container bg-white">
+      <div class="container bg-white pb-5 mb-5 rounded">
 	<div class="row">
-	  <h1 class="text-primary fs-4">Latest Course</h1>
+	  <h1 class="text-primary fs-4 my-5 ms-lg-5">Latest Course</h1>
 	</div>
-	<div class="row">
+	<div class="row ms-4">
           <div class="col-lg-4">
-	    <img alt="" src="images/courses/course-1.png" width="225" />
-	    <h1 class="course-title">React - The Complete Guide 2020</h1>
-	    <p class="author">Reed Krakoff.</p>
-	    <div class="course-info">
-	      <div class="ratings">
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-inactive"></i>
-		<span class="rating-point">4.0</span>
-	      </div>
-	      <div class="time">
-		<i class="far fa-clock"></i>
-		<span>01:30 hr</span>
+	    <div class="container">
+	      <div class="row shadow py-3 rounded-3">
+		<div class="col">
+		  <img alt="" src="images/courses/course-1.png" width="100%" />
+		  <h1 class="fs-3 px-2 pt-3">React - The Complete Guide 2020</h1>
+		  <p class="px-2 text-danger">Reed Krakoff.</p>
+		  <div class="d-flex justify-content-between">
+		    <div class="px-2">
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star ratings-color-inactive"></i>
+		      <span class="rating-point">4.0</span>
+		    </div>
+		    <div class="border border-danger rounded-pill px-2 mx-2">
+		      <i class="far fa-clock text-danger"></i>
+		      <span class="text-danger">01:30 hr</span>
+		    </div>
+		  </div>
+		</div>
 	      </div>
 	    </div>
 	  </div>
           <div class="col-lg-4">
-	    <img alt="" src="images/courses/course-2.png" width="225" />
-	    <h1 class="course-title">Powerpoint 2020 Master Powerpoint Course</h1>
-	    <p class="author">Walter Scott</p>
-	    <div class="course-info">
-	      <div class="ratings">
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-inactive"></i>
-		<span class="rating-point">4.0</span>
-	      </div>
-	      <div class="time">
-		<i class="far fa-clock"></i>
-		  <span>01:30 hr</span>
+	    <div class="container">
+	      <div class="row">
+		<div class="col shadow py-3 rounded-3">
+		  <img alt="" src="images/courses/course-2.png" width="100%" />
+		  <h1 class="fs-3 px-2 pt-3">Powerpoint 2020 Master Powerpoint Course</h1>
+		  <p class="px-2 text-danger">Walter Scott</p>
+		  <div class="d-flex  justify-content-between">
+		    <div class="px-2">
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star ratings-color-inactive"></i>
+		      <span class="rating-point">4.0</span>
+		    </div>
+		    <div class="border border-danger rounded-pill px-2 mx-2">
+		      <i class="far fa-clock text-danger"></i>
+		      <span class="text-danger">01:30 hr</span>
+		    </div>
+		  </div>
+		</div>
 	      </div>
 	    </div>
 	  </div>
           <div class="col-lg-4">
-	    <img alt="" src="images/courses/course-3.png" width="225" />
-	    <h1 class="course-title">The Complete JavaScript Course 2020</h1>
-	    <p class="author">Reed Krakoff.</p>
-	    <div class="course-info">
-	      <div class="ratings">
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-active"></i>
-		<i class="fas fa-star ratings-color-inactive"></i>
-		<span class="rating-point">4.0</span>
-	      </div>
-	      <div class="time">
-		<i class="far fa-clock"></i>
-		<span>01:30 hr</span>
+	    <div class="container">
+	      <div class="row">
+		<div class="col shadow py-3 rounded-3">
+		  <img alt="" src="images/courses/course-3.png" width="100%" />
+		  <h1 class="fs-3 px-2 pt-3">The Complete JavaScript Course 2020</h1>
+		  <p class="px-2 text-danger">Reed Krakoff.</p>
+		  <div class="d-flex justify-content-between">
+		    <div class="px-2">
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star text-warning"></i>
+		      <i class="fas fa-star ratings-color-inactive"></i>
+		      <span class="rating-point">4.0</span>
+		    </div>
+		    <div class="border border-danger rounded-pill px-2 mx-2">
+		      <i class="far fa-clock text-danger"></i>
+		      <span class="text-danger">01:30 hr</span>
+		    </div>
+		  </div>
+		</div>
 	      </div>
 	    </div>
 	  </div>
@@ -185,5 +204,6 @@
     </main>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/fc813874b8.js" crossorigin="anonymous"></script>
   </body>
 </html>
